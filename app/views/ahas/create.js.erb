@@ -1,0 +1,3 @@
+$("#new_aha").parent().before("<%= escape_javascript(render('aha', :aha_var => @aha)) %>");
+$("#aha_<%= @aha.id %>").slideDown();
+$("#aha_note").val("");
